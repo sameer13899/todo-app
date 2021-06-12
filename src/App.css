@@ -1,38 +1,67 @@
-.App {
+.header {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  font-weight: 1000;
+  font-size: 32px;
+  background: yellowgreen;
+  line-height: 96px;
+}
+.header > a {
+  color: black;
+  text-decoration: none;
+}
+
+.todos {
+  background: rgb(226, 43, 43);
   text-align: center;
+  border: brown 4px solid;
+  border-radius: 20px;
+  margin: 32px 0;
+  padding: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-item {
+  margin: 24px;
+  background: yellow;
+  text-align: start;
+  border: teal 2px solid;
+  padding: 16px;
+  border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  text-transform: uppercase;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desc {
+  font-weight: 600;
+  font-size: 20px;
+}
+.delete {
+  font-size: 20px;
+  color: white;
+  background: rgb(29, 146, 241);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+.delete:active {
+  transform: scale(0.98);
+}
+.add-todo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  padding: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input {
+  font-size: large;
+  width: 100%;
+  margin: 16px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 8px;
 }
